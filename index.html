@@ -1069,6 +1069,24 @@ target="_blank" href="https://www.behance.net/gallery/122890405/MindShare-Billbo
             </li>
 
             <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://brokerstatus-client.vercel.app" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./public/images/brokerstatus.png" alt="Broker-Status" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Broker-Status Portal</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
               <a href="https://www.behance.net/gallery/122890405/MindShare-Billboard-System-UIUX" target="_blank">
 
                 <figure class="project-img">
@@ -1485,19 +1503,49 @@ target="_blank" href="https://www.behance.net/gallery/122890405/MindShare-Billbo
 
         <section class="contact-form">
           <h3 class="h3 form-title">Contact Form</h3>
-          <form action="/submit" method="POST" class="form" data-form>
+          
+          <!-- <form id="myForm" action="https://script.google.com/macros/s/AKfycbypGSgDxrBbsiB6mqZUg5l1AIc12dQT1LLrDQI9NIIzugKchx2wymwlmzAder3Uow2Dow/exec" method="POST" class="form" data-form>
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
               <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
             </div>
             <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-            <button value="Send Email" class="form-btn" type="submit" disabled data-form-btn>
+            <button value="Send Email" class="form-btn" onclick="submitForm()" type="submit" disabled data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>
               <span>Send Message</span>
             </button>
-
           </form>
+          
+          <script>
+            function submitForm() {
+              var fullname = document.getElementById("fullname").value;
+              var email = document.getElementById("email").value;
+              var message = document.getElementById("message").value;
+          
+              var formData = {
+                fullname: fullname,
+                email: email,
+                message: message
+              };
+          
+              google.script.run.processForm(formData);
+            }
+          </script> -->
 
+          <form id="myForm" action="https://script.google.com/macros/s/AKfycbz5Dr3Qa0LBt2z4bsXTY2MZJpYKObDN-cfP6O58FXcLkYFufL6MMvvIf9tWEIbIhoysKA/exec" method="POST" class="form" data-form>
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required>
+            </div>
+            <textarea name="message" class="form-input" placeholder="Your Message" required></textarea>
+            <button class="form-btn" type="submit">
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
+          
+          
+          
         </section>
 
       </article>
